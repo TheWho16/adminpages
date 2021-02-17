@@ -1,0 +1,207 @@
+// Block with student reviews scss
+.feedback__wrap-outside {
+    overflow: hidden;
+    padding: 0px 57px;
+    margin: 4rem 0;
+
+.cards__wrap {
+    margin-bottom: 2rem;
+}
+}
+
+.feedback_list.cards__list {
+    display: flex;
+
+.feedback__cards__item {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 320px;
+    margin-right: 43px;
+    height: max-content;
+
+.feedback__cards__item-title {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 58px;
+    font-family: Nekst;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 22px;
+
+p {
+    color: #30192d;
+}
+
+p:first-child {
+    color: #025453;
+}
+}
+
+.cards__item-img.feedback__cards__item-img {
+    width: 320px;
+    height: 223px;
+    padding-bottom: 0;
+
+img {
+    position: relative;
+    height: initial;
+}
+}
+
+.feedback__cards__item-info {
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    color: #30192d;
+}
+}
+}
+
+.feedback_card_pagination {
+    display: none;
+}
+
+.scroll__right.scroll__feedback {
+    display: none !important;
+
+.icon__right {
+    transform: rotate(180deg);
+}
+}
+
+@media (max-width: 1024px) {
+    .feedback_list.cards__list .feedback__cards__item {
+        min-width: 315px;
+        width: 315px;
+
+    .feedback__cards__item-title {
+        font-size: 24px;
+    }
+}
+}
+
+@media (max-width: 768px) {
+    .feedback__wrap-outside {
+        padding: 0px 10px;
+    }
+
+    .feedback_list.cards__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    .feedback__cards__item {
+        width: 290px;
+        min-width: 290px;
+        margin-right: 60px;
+
+    .feedback__cards__item-title {
+        font-size: 24px;
+    }
+
+    .feedback__cards__item-info {
+        line-height: 1.4;
+        font-size: 20px;
+    }
+}
+}
+
+.scroll__nav-box.d-flex.align-items-center {
+    display: flex !important;
+}
+
+}
+
+@media (max-width: 450px) {
+    .feedback_list.cards__list {
+    .feedback__cards__item {
+        width: 272px;
+        min-width: 100%;
+
+    .feedback__cards__item-title {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 41px;
+    }
+
+    .feedback__cards__item-info {
+        line-height: 1.28;
+        font-size: 18px;
+    }
+
+    .cards__item-img.feedback__cards__item-img {
+        width: 100%;
+    }
+}
+}
+
+.feedback_card_pagination {
+    display: block !important;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2;
+    text-align: center;
+    color: #979797;
+}
+
+.scroll__right.d-flex.cards-scroll-js.scroll__feedback {
+    display: flex !important;
+}
+
+.feedback_card_pagination_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.scroll__nav-box.d-flex.align-items-center {
+    display: none !important;
+}
+
+.cards__item.feedback__cards__item.feedback_item_without_photo {
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+}
+
+//no img feedback
+
+  .feedback_item_without_photo {
+      width: 100%;
+      min-width: fit-content;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      height: 450px;
+      min-width: 100%;
+
+.feedback__cards__item-title {
+    margin: 0;
+    text-align: initial;
+}
+}
+
+@media (max-width: 768px) {
+    .feedback_item_without_photo {
+        display: flex;
+        flex-direction: column;
+
+    .feedback__cards__item-title {
+        margin-bottom: 34px;
+    }
+}
+
+.scroll__right.d-flex.cards-scroll-js.feedback_right{
+    margin-left: 18px;
+}
+
+}
